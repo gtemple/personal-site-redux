@@ -1,4 +1,6 @@
-import Projects from './Projects';
+import Projects from './Projects/Index';
+import Work from './Work/Index';
+import Education from './Education/Index';
 
 import './home.css'
 
@@ -18,11 +20,22 @@ const Home: React.FC = () => {
           <button className='btn-scroll' onClick={handleClickScroll}>
             Projects
           </button>
+          <button className='btn-scroll' onClick={handleClickScroll}>
+            Work
+          </button>
+          <button className='btn-scroll' onClick={handleClickScroll}>
+            Education
+          </button>
         </nav>
       </div>
       <section id="projects">
         <Projects />
-        <>hi</>
+      </section>
+      <section id="work">
+        <Work/>
+      </section>
+      <section id="education">
+        <Education />
       </section>
     </div>
   );
