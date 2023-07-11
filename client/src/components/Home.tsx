@@ -15,7 +15,10 @@ const Home: React.FC = () => {
   return (
     <div>
       <div className='splash'>
-        <div>Home</div>
+        <div>
+          <h1>GIORDANO TEMPLE</h1>
+          <div>Full-Stack Web Developer</div>
+        </div>
         <nav>
           <button className='btn-scroll' onClick={handleClickScroll}>
             Projects
