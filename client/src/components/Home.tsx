@@ -1,9 +1,31 @@
-import { HashLink } from 'react-router-hash-link';
+import Projects from './Projects';
 
-const Home = () => {
+import './home.css'
+
+const Home: React.FC = () => {
+  const handleClickScroll = () => {
+    const element = document.getElementById('projects');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <div>Home</div>
-  )
+    <div>
+      <div className='splash'>
+        <div>Home</div>
+        <nav>
+          <button className='btn-scroll' onClick={handleClickScroll}>
+            Projects
+          </button>
+        </nav>
+      </div>
+      <section id="projects">
+        <Projects />
+        <>hi</>
+      </section>
+    </div>
+  );
 }
 
-export default Home
+export default Home;
