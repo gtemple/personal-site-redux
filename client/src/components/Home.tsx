@@ -12,12 +12,16 @@ const Home: React.FC = () => {
     }
   };
 
+
   return (
     <div>
       <div className='splash'>
         <div>
-          <h1>GIORDANO TEMPLE</h1>
-          <div>Full-Stack Web Developer</div>
+          <h1>
+            <span className='fade-in delay-1'>GIORDANO </span>
+            <span className='fade-in delay-2'>TEMPLE</span>
+          </h1>
+          <h4>full-stack web developer</h4>
         </div>
         <nav>
           <button className='btn-scroll' onClick={handleClickScroll}>

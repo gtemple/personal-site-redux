@@ -11,3 +11,79 @@ h1 {
   font-weight: 900;
   margin: 0;
 }
+
+h4 {
+  font-size: 3vw;
+  margin: 0;
+}
+
+h1:hover {
+  text-shadow: 1px 2px 6px rgba(0,0,0,0.46);
+}
+
+/* .fade-in {
+  animation: fadeIn ease 2s delay 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s delay 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+} */
+
+.delay-1 {
+  animation-delay: 1s;
+}
+
+.delay-2 {
+  animation-delay: 2s;
+}
+
+.fade-in {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration:1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }
+}
