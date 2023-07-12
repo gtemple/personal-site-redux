@@ -29,19 +29,78 @@ h1:hover {
   -ms-animation: fadeIn ease 2s;
 } */
 
-.delay-1 {
-  animation-delay: 1s;
-}
-
-.delay-2 {
-  animation-delay: 2s;
-}
 
 .fade-in {
   opacity: 0;
   animation-name: fadeIn;
   animation-duration:1s;
   animation-fill-mode: forwards;
+}
+
+
+.delay-1 {
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+}
+
+.delay-2 {
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  -ms-animation-delay: 2s;
+}
+
+.delay-3 {
+  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  -ms-animation-delay: 3s;
+}
+
+.delay-3 {
+  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  -ms-animation-delay: 3s;
+}
+
+.delay-3250 {
+  animation-delay: 3250ms;
+  -webkit-animation-delay: 3250ms;
+  -moz-animation-delay: 3250ms;
+  -o-animation-delay: 3250ms;
+  -ms-animation-delay: 3250ms;
+}
+
+.delay-3500 {
+  animation-delay: 3500ms;
+  -webkit-animation-delay: 3500ms;
+  -moz-animation-delay: 3500ms;
+  -o-animation-delay: 3500ms;
+  -ms-animation-delay: 3500ms;
+}
+
+.delay-3750 {
+  animation-delay: 3750ms;
+  -webkit-animation-delay: 3750ms;
+  -moz-animation-delay: 3750ms;
+  -o-animation-delay: 3750ms;
+  -ms-animation-delay: 3750ms;
+}
+
+
+.delay-4750 {
+  animation-delay: 4750ms;
+  -webkit-animation-delay: 4750ms;
+  -moz-animation-delay: 4750ms;
+  -o-animation-delay: 4750ms;
+  -ms-animation-delay: 4750ms;
 }
 
 @keyframes fadeIn {
@@ -87,3 +146,4 @@ h1:hover {
       opacity:1;
   }
 }
+

@@ -21,7 +21,13 @@ const Home: React.FC = () => {
             <span className='fade-in delay-1'>GIORDANO </span>
             <span className='fade-in delay-2'>TEMPLE</span>
           </h1>
-          <h4>full-stack web developer</h4>
+          <h4>
+            <span className='fade-in delay-3'>full</span>
+            <span className='fade-in delay-3250'>-stack </span>
+            <span className='fade-in delay-3500'>web </span>
+            <span className='fade-in delay-3750'>developer</span>
+            <span className='fade-in delay-4750'>.</span>
+          </h4>
         </div>
         <nav>
           <button className='btn-scroll' onClick={handleClickScroll}>
