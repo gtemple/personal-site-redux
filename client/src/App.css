@@ -7,7 +7,7 @@
 
 h1 {
   color: #2b72a5;
-  font-size: 8vw;
+  font-size: 9.5vw;
   font-weight: 900;
   margin: 0;
 }
@@ -17,17 +17,43 @@ h4 {
   margin: 0;
 }
 
-h1:hover {
-  text-shadow: 1px 2px 6px rgba(0,0,0,0.46);
+.vw5 {
+  font-size: 5vw;
 }
 
-/* .fade-in {
-  animation: fadeIn ease 2s delay 2s;
-  -webkit-animation: fadeIn ease 2s;
-  -moz-animation: fadeIn ease 2s delay 2s;
-  -o-animation: fadeIn ease 2s;
-  -ms-animation: fadeIn ease 2s;
-} */
+
+nav {
+  display: flex;
+  gap: 23px;
+  justify-content: center;
+  margin: 30px;
+}
+
+button {
+  border: none;
+  background: none;
+  font-size: 2vw;
+  text-transform: lowercase;
+  position: relative;
+  text-decoration: none;
+
+}
+
+button::before {
+  background: hsl(208, 100%, 75%);
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+}
+
+button:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
 
 
 .fade-in {
@@ -37,6 +63,12 @@ h1:hover {
   animation-fill-mode: forwards;
 }
 
+.fade-in-2 {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
 
 .delay-1 {
   animation-delay: 1s;
@@ -102,6 +134,16 @@ h1:hover {
   -o-animation-delay: 4750ms;
   -ms-animation-delay: 4750ms;
 }
+
+.delay-5250 {
+  animation-delay: 5250ms;
+  -webkit-animation-delay: 5250ms;
+  -moz-animation-delay: 5250ms;
+  -o-animation-delay: 5250ms;
+  -ms-animation-delay: 5250ms;
+}
+
+
 
 @keyframes fadeIn {
   0% {

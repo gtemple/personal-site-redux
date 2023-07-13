@@ -1,6 +1,7 @@
 import Projects from './Projects/Index';
 import Work from './Work/Index';
 import Education from './Education/Index';
+import { About } from './About';
 
 import './home.css'
 
@@ -26,10 +27,10 @@ const Home: React.FC = () => {
             <span className='fade-in delay-3250'>-stack </span>
             <span className='fade-in delay-3500'>web </span>
             <span className='fade-in delay-3750'>developer</span>
-            <span className='fade-in delay-4750'>.</span>
+            <span className='fade-in delay-4750 vw5'>.</span>
           </h4>
         </div>
-        <nav>
+        <nav className='fade-in-2 delay-5250'>
           <button className='btn-scroll' onClick={handleClickScroll}>
             Projects
           </button>
@@ -41,15 +42,20 @@ const Home: React.FC = () => {
           </button>
         </nav>
       </div>
-      <section id="projects">
-        <Projects />
-      </section>
-      <section id="work">
-        <Work/>
-      </section>
-      <section id="education">
-        <Education />
-      </section>
+      <div className='fade-in-2 delay-5250'>
+        <section id="about">
+          <About />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
+        <section id="work">
+          <Work/>
+        </section>
+        <section id="education">
+          <Education />
+        </section>
+      </div>
     </div>
   );
 }
