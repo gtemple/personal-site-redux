@@ -43,6 +43,7 @@ const Home: React.FC = () => {
         </nav>
       </div>
       <div className='fade-in-2 delay-5250'>
+        <hr></hr>
         <section id="about">
           <About />
         </section>
