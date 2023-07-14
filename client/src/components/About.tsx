@@ -8,9 +8,9 @@ export const About = () => {
       <img className='portrait' src={portrait} />
       <div className='socials'>
         <div className='socials-icon'><a href='https://www.linkedin.com/in/giordano-temple/' target="_blank"><SiLinkedin /></a></div>
-        <div><a href='https://github.com/gtemple' target='_blank'><SiGithub /></a></div>
-        <div><a href="mailto:giordanotemple@gmail.com"><SiGmail /></a></div>
-        <div><a href='https://www.instagram.com/g_temps/' target='_blank'><SiInstagram /></a></div>
+        <div className='socials-icon'><a href='https://github.com/gtemple' target='_blank'><SiGithub /></a></div>
+        <div className='socials-icon'><a href="mailto:giordanotemple@gmail.com"><SiGmail /></a></div>
+        <div className='socials-icon'><a href='https://www.instagram.com/g_temps/' target='_blank'><SiInstagram /></a></div>
       </div>
     </div>
   )

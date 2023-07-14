@@ -5,5 +5,105 @@
 }
 
 .box {
-  width: 300px;
+  width: 350px;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: #e9e95d;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+.box:hover {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tech {
+  margin-top: 4px;
+  padding: 4px;
+  border-radius: 3px;
+  font-weight: 500;
+  transition: transform .2s;
+}
+
+.tech:hover {
+  transform: scale(1.1); 
+}
+
+.javascript {
+  background-color: #EFD81D;
+}
+
+.typescript {
+  background-color: rgb(81, 114, 245)
+}
+
+.react {
+  background-color: rgb(0, 200, 255);
+}
+
+.bootstrap {
+  color: white;
+  background-color: #6F2DF3;
+}
+
+.supabase {
+  background-color: #3ECF8E;
+}
+
+.sql {
+  background-color: rgb(255, 136, 0);
+}
+
+.axios {
+  color: white;
+  background-color: #671DDF;
+}
+
+.nodejs {
+  color: white;
+  background-color: #406852;
+}
+
+.openai {
+  color: white;
+  background-color: gray;
+}
+
+.express {
+  background-color: white;
+}
+
+.postgressql {
+  color: white;
+  background-color: #336791;
+}
+
+.ruby {
+  color: white;
+  background-color: #CC342D;
+}
+
+.rails {
+  color: white;
+  background-color: #D30001;
+}
+
+.active-record {
+  background-color: pink;
+}
+
+.bcrypt {
+  color: white;
+  background-color: rgb(5, 16, 18);
+}
+
+.cypress {
+  background-color: #f0fcf8;
 }

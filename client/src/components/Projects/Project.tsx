@@ -12,7 +12,7 @@ export const Project = ({ name, description, url, github, stack }: ProjectProps)
 
   const stackParser = (stackArray: string[]) => {
     return stackArray.map((s: string, index: number) => {
-      return (<div className='s' key={index}>{s} hello</div>)
+      return (<div className={`${s.toLowerCase().split(' ').join('-')} tech`} key={index}>{s}</div>)
     });
   }
   
@@ -23,7 +23,7 @@ export const Project = ({ name, description, url, github, stack }: ProjectProps)
       <a href={github}>Github</a>
       {url !== undefined ? (<a href={url}>Visit</a>) : null}
       <div>
-        <>{stackParser(stack)}</>
+        <div className='stack'>{stackParser(stack)}</div>
       </div>
     </div>
   )
