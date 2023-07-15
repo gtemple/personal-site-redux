@@ -19,6 +19,8 @@ export const Project = ({ name, description, url, github, stack }: ProjectProps)
   return (
     <div className='box'>
       <div className='title'>{name}</div>
+
+      
       {description}, 
       <a href={github}>Github</a>
       {url !== undefined ? (<a href={url}>Visit</a>) : null}

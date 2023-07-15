@@ -1,26 +1,95 @@
-import { Project } from "./Project"
+import React, { useState } from 'react';
+import { Project } from './Project';
+import './project.css';
 
-import './project.css'
+interface ProjectData {
+  name: string;
+  description: string;
+  url?: string;
+  github: string;
+  stack: string[];
+}
 
 const cgrDescription = 'racing';
 const cgrStack = ['typescript', 'react', 'bootstrap', 'supabase', 'sql'];
 
-const sureChefDescription = 'cooking'
-const sureChefStack = ['javascript', 'openAI', 'axios', 'nodeJS', 'express', 'sql', 'postgresSQL'];
+const sureChefDescription = 'cooking';
+const sureChefStack = ['javascript', 'react', 'openAI', 'axios', 'nodeJS', 'express', 'sql', 'postgresSQL', 'userfront', 'bootstrap'];
 
 const jungleRailsDescription = 'store';
 const jungleRailsStack = ['ruby', 'rails', 'active record', 'postgresSQL', 'bcrypt', 'cypress'];
 
-const Projects = () => {
+const allProjects: ProjectData[] = [
+  {
+    name: 'CGR League',
+    description: cgrDescription,
+    url: 'https://cgr-league.net/',
+    github: 'https://github.com/gtemple/cgr-league',
+    stack: cgrStack,
+  },
+  {
+    name: 'SureChef',
+    description: sureChefDescription,
+    url: undefined,
+    github: 'https://github.com/gtemple/sure-chef-final-project',
+    stack: sureChefStack,
+  },
+  {
+    name: 'Jungle Rails',
+    description: jungleRailsDescription,
+    url: undefined,
+    github: 'https://github.com/gtemple/jungle-rails',
+    stack: jungleRailsStack,
+  },
+];
+
+const Projects: React.FC = () => {
+  const [selectedStacks, setSelectedStacks] = useState<string[]>([]);
+
+  const handleStackClick = (stack: string) => {
+    if (selectedStacks.includes(stack)) {
+      setSelectedStacks(selectedStacks.filter((selected) => selected !== stack));
+    } else {
+      setSelectedStacks([...selectedStacks, stack]);
+    }
+  };
+
+  const filteredProjects = allProjects.filter((project) => {
+    if (selectedStacks.length === 0) {
+      return true;
+    }
+    return selectedStacks.every((selectedStack) => project.stack.includes(selectedStack));
+  });
+
+  const uniqueStacks = [...new Set(allProjects.flatMap((project) => project.stack))].sort();
+
   return (
-    <div className='projects'>
-      <Project name={'CGR League'} description={cgrDescription} url={'https://cgr-league.net/'} github={'https://github.com/gtemple/cgr-league'} stack={cgrStack}/>
-      <Project name={'SureChef'} description={sureChefDescription} url={undefined} github={'https://github.com/gtemple/sure-chef-final-project'} stack={sureChefStack}/>
-      <Project name={'Jungle Rails'} description={jungleRailsDescription} url={undefined} github={'https://github.com/gtemple/jungle-rails'} stack={jungleRailsStack}/>
-
-
+    <div className='project-container'>
+      <div className='techs'>
+        {uniqueStacks.map((stack, index) => (
+          <div
+            className={`${stack.toLowerCase().split(' ').join('-')} tech ${selectedStacks.includes(stack) ? 'selected' : ''}`}
+            key={index}
+            onClick={() => handleStackClick(stack)}
+          >
+            {stack}
+          </div>
+        ))}
+      </div>
+      <div className='projects'>
+        {filteredProjects.map((project, index) => (
+          <Project
+            key={index}
+            name={project.name}
+            description={project.description}
+            url={project.url}
+            github={project.github}
+            stack={project.stack}
+          />
+        ))}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

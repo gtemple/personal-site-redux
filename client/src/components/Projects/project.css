@@ -1,3 +1,7 @@
+.project-container {
+  display: flex;
+}
+
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -17,19 +21,27 @@
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
+.title {
+  font-weight: 800;
+  font-size: 30px;
+}
+
 .stack {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
 }
 
 .tech {
-  margin-top: 4px;
+  margin: 4px;
   padding: 4px;
   border-radius: 3px;
   font-weight: 500;
   transition: transform .2s;
+}
+
+.selected {
+  box-shadow: rgba(240, 46, 170, 0.4) 3px 0px, rgba(240, 46, 170, 0.3) 6px 0px, rgba(240, 46, 170, 0.2) 9px 0px, rgba(240, 46, 170, 0.1) 12px 0px, rgba(240, 46, 170, 0.05) 15px 0px;
 }
 
 .tech:hover {
@@ -106,4 +118,9 @@
 
 .cypress {
   background-color: #f0fcf8;
+}
+
+.userfront {
+  color: white;
+  background-color: #2A3365;
 }
