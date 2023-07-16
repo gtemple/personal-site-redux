@@ -1,18 +1,18 @@
+import React, { ReactElement } from 'react';
 import Projects from './Projects/Index';
 import Work from './Work/Index';
 import Education from './Education/Index';
 import { About } from './About';
 
-import './home.css'
+import './home.css';
 
-const Home: React.FC = () => {
-  const handleClickScroll = () => {
-    const element = document.getElementById('projects');
+const Home: React.FC = (): ReactElement => {
+  const handleClickScroll = (targetId: string): void => {
+    const element = document.getElementById(targetId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
-
 
   return (
     <div>
@@ -31,34 +31,34 @@ const Home: React.FC = () => {
           </h4>
         </div>
         <nav className='fade-in-2 delay-5250'>
-          <button className='btn-scroll' onClick={handleClickScroll}>
+          <button className='btn-scroll' onClick={() => handleClickScroll('projects')}>
             Projects
           </button>
-          <button className='btn-scroll' onClick={handleClickScroll}>
+          <button className='btn-scroll' onClick={() => handleClickScroll('work')}>
             Work
           </button>
-          <button className='btn-scroll' onClick={handleClickScroll}>
+          <button className='btn-scroll' onClick={() => handleClickScroll('education')}>
             Education
           </button>
         </nav>
       </div>
       <div className='fade-in-2 delay-5250'>
         <hr></hr>
-        <section id="about">
+        <section id='about'>
           <About />
         </section>
-        <section id="projects">
+        <section id='projects'>
           <Projects />
         </section>
-        <section id="work">
-          <Work/>
+        <section id='work'>
+          <Work />
         </section>
-        <section id="education">
+        <section id='education'>
           <Education />
         </section>
       </div>
     </div>
   );
-}
+};
 
 export default Home;

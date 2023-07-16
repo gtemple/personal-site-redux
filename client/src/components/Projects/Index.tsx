@@ -65,16 +65,19 @@ const Projects: React.FC = () => {
 
   return (
     <div className='project-container'>
-      <div className='techs'>
-        {uniqueStacks.map((stack, index) => (
-          <div
-            className={`${stack.toLowerCase().split(' ').join('-')} tech ${selectedStacks.includes(stack) ? 'selected' : ''}`}
-            key={index}
-            onClick={() => handleStackClick(stack)}
-          >
-            {stack}
-          </div>
-        ))}
+      <div className='techs-container'>
+        <h3>Filter my projects</h3> 
+        <div className='techs'>
+          {uniqueStacks.map((stack, index) => (
+            <div
+              className={`${stack.toLowerCase().split(' ').join('-')} tech ${selectedStacks.includes(stack) ? 'selected' : ''}`}
+              key={index}
+              onClick={() => handleStackClick(stack)}
+            >
+              {stack}
+            </div>
+          ))}
+        </div>
       </div>
       <div className='projects'>
         {filteredProjects.map((project, index) => (
