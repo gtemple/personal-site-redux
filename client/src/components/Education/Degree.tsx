@@ -13,9 +13,18 @@ type DegreeData = {
 const Degree = ({name, degree, location, start, end, description, image, skills}: DegreeData) => {
   return (
     <div className='degree-container'>
-      <h3>{degree}</h3>
-      <div>{name}</div>
-      <div>{location}</div>
+      <div>
+        <h3>{degree}</h3>
+        <div>{start} - {end}</div>
+      </div>
+      <div>
+        <div>{name}</div>
+        <div>{location}</div>
+      </div>
+      <div>
+        <div>{skills}</div>
+        <div>{description}</div>
+      </div>
     </div>
   )
 }

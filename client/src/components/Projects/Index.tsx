@@ -8,6 +8,8 @@ interface ProjectData {
   url?: string;
   github: string;
   stack: string[];
+  start: string;
+  end: string;
 }
 
 const cgrDescription = 'racing';
@@ -19,6 +21,9 @@ const sureChefStack = ['javascript', 'react', 'openAI', 'axios', 'nodeJS', 'expr
 const jungleRailsDescription = 'store';
 const jungleRailsStack = ['ruby', 'rails', 'active record', 'postgresSQL', 'bcrypt', 'cypress'];
 
+const educationalPostingBoardDescription = 'board';
+const educationalPostingBoardStack = ['javascript', 'jQuery', 'express', 'nodeJS', 'bcrypt', 'bootstrap', 'sass', 'ejs', 'postgresSQL'];
+
 const allProjects: ProjectData[] = [
   {
     name: 'CGR League',
@@ -26,6 +31,8 @@ const allProjects: ProjectData[] = [
     url: 'https://cgr-league.net/',
     github: 'https://github.com/gtemple/cgr-league',
     stack: cgrStack,
+    start: 'April 2023',
+    end: 'present'
   },
   {
     name: 'SureChef',
@@ -33,6 +40,8 @@ const allProjects: ProjectData[] = [
     url: undefined,
     github: 'https://github.com/gtemple/sure-chef-final-project',
     stack: sureChefStack,
+    start: 'March 2023',
+    end: 'March 2023'
   },
   {
     name: 'Jungle Rails',
@@ -40,6 +49,17 @@ const allProjects: ProjectData[] = [
     url: undefined,
     github: 'https://github.com/gtemple/jungle-rails',
     stack: jungleRailsStack,
+    start: 'March 2023',
+    end: 'March 2023'
+  },
+  {
+    name: 'Educational Posting Board',
+    description: educationalPostingBoardDescription,
+    url: undefined,
+    github: 'https://github.com/gtemple/Educational-Posting-Board',
+    stack: educationalPostingBoardStack,
+    start: 'February 2023',
+    end: 'February 2023'
   },
 ];
 

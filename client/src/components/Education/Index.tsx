@@ -36,7 +36,7 @@ const schools: School[] = [
     end: 'June 2017',
     description: 'It sell therefore it do',
     image: 'image link will go here',
-    skills: ['marketing'],
+    skills: ['SEO', 'marketing', 'interpersonal skills', 'communications'],
   },
   {
     name: 'Carleton University',

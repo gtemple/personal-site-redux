@@ -142,3 +142,17 @@
   color: white;
   background-color: #2A3365;
 }
+
+.jquery {
+  color: white;
+  background-color: #222c68;
+}
+
+.ejs {
+  color: white;
+  background-color: #4a0593;
+}
+
+.sass {
+  background-color: rgb(253, 116, 203);
+}
