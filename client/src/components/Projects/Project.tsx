@@ -7,7 +7,6 @@ type ProjectProps = {
 }
 
 
-
 export const Project = ({ name, description, url, github, stack }: ProjectProps) => {
 
   const stackParser = (stackArray: string[]) => {

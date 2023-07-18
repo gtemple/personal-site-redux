@@ -10,19 +10,28 @@ type DegreeData = {
   skills: string[]
 }
 
-const Degree = ({name, degree, location, start, end, description, image, skills}: DegreeData) => {
+const Degree = ({name, degree, location, start, end, description, skills}: DegreeData) => {
+
+  const skillsParser = (skillArray: string[]) => {
+    return skillArray.map((s: string, index: number) => {
+      return (<div className={`${s.toLowerCase().split(' ').join('-')} skill`} key={index}>{s}</div>)
+    });
+  }
+
   return (
     <div className='degree-container'>
       <div>
         <h3>{degree}</h3>
-        <div>{start} - {end}</div>
+        <div>
+          <div>{name}</div>
+          <div>{start} - {end}</div>
+        </div>
       </div>
       <div>
-        <div>{name}</div>
         <div>{location}</div>
       </div>
       <div>
-        <div>{skills}</div>
+        <div className='skills'>Skills {skillsParser(skills)}</div>
         <div>{description}</div>
       </div>
     </div>
