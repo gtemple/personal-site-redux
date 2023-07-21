@@ -10,7 +10,7 @@ type ProjectProps = {
 export const Project = ({ name, description, url, github, stack }: ProjectProps) => {
 
   const stackParser = (stackArray: string[]) => {
-    return stackArray.map((s: string, index: number) => {
+    return stackArray.sort().map((s: string, index: number) => {
       return (<div className={`${s.toLowerCase().split(' ').join('-')} tech`} key={index}>{s}</div>)
     });
   }
