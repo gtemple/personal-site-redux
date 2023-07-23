@@ -2,12 +2,15 @@
   padding: 30px 0 0 0;
   display: flex;
   flex-wrap: wrap;
+  min-height: 100vh;
 }
 
 .projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
+  width: 100vw
   
 }
 
@@ -155,4 +158,13 @@
 
 .sass {
   background-color: rgb(253, 116, 203);
+}
+
+.destr {
+  color: white;
+  background-color: #406852;
+}
+
+.cors {
+  background-color: #72ff91;
 }

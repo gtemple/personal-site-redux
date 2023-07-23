@@ -16,7 +16,7 @@ const cgrDescription = 'racing';
 const cgrStack = ['typescript', 'react', 'bootstrap', 'supabase', 'sql', 'cors'];
 
 const sureChefDescription = 'cooking';
-const sureChefStack = ['javascript', 'react', 'openAI', 'axios', 'nodeJS', 'express', 'sql', 'postgresSQL', 'userfront', 'bootstrap', 'cors'];
+const sureChefStack = ['javascript', 'react', 'openAI', 'axios', 'nodeJS', 'express', 'sql', 'postgresSQL', 'userfront', 'bootstrap', 'cors', 'destr'];
 
 const jungleRailsDescription = 'store';
 const jungleRailsStack = ['ruby', 'rails', 'active record', 'postgresSQL', 'bcrypt', 'cypress'];
