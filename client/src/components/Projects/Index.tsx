@@ -6,6 +6,7 @@ interface ProjectData {
   name: string;
   description: string;
   url?: string;
+  image: string;
   github: string;
   stack: string[];
   start: string;
@@ -29,6 +30,7 @@ const allProjects: ProjectData[] = [
     name: 'CGR League',
     description: cgrDescription,
     url: 'https://cgr-league.net/',
+    image: 'cgrLeague.png',
     github: 'https://github.com/gtemple/cgr-league',
     stack: cgrStack,
     start: 'April 2023',
@@ -38,6 +40,7 @@ const allProjects: ProjectData[] = [
     name: 'SureChef',
     description: sureChefDescription,
     url: undefined,
+    image: 'sureChef.png',
     github: 'https://github.com/gtemple/sure-chef-final-project',
     stack: sureChefStack,
     start: 'March 2023',
@@ -47,6 +50,7 @@ const allProjects: ProjectData[] = [
     name: 'Jungle Rails',
     description: jungleRailsDescription,
     url: undefined,
+    image: 'jungleRails.png',
     github: 'https://github.com/gtemple/jungle-rails',
     stack: jungleRailsStack,
     start: 'March 2023',
@@ -56,6 +60,7 @@ const allProjects: ProjectData[] = [
     name: 'Educational Posting Board',
     description: educationalPostingBoardDescription,
     url: undefined,
+    image: 'educationalJobPosting.png',
     github: 'https://github.com/gtemple/Educational-Posting-Board',
     stack: educationalPostingBoardStack,
     start: 'February 2023',
@@ -100,16 +105,18 @@ const Projects: React.FC = () => {
         </div>
       </div>
       <div className='projects'>
-        {filteredProjects.map((project, index) => (
+        {filteredProjects.length !== 0 ? filteredProjects.map((project, index) => (
           <Project
             key={index}
             name={project.name}
+            image={project.image}
             description={project.description}
             url={project.url}
             github={project.github}
             stack={project.stack}
           />
-        ))}
+        )) :
+        (<h3>I don't have any projects that include  all of the selected technologies!</h3>)}
       </div>
     </div>
   );
