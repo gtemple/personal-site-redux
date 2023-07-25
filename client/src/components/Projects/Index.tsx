@@ -20,7 +20,7 @@ const sureChefDescription = 'cooking';
 const sureChefStack = ['javascript', 'react', 'openAI', 'axios', 'nodeJS', 'express', 'sql', 'postgresSQL', 'userfront', 'bootstrap', 'cors', 'destr'];
 
 const jungleRailsDescription = 'store';
-const jungleRailsStack = ['ruby', 'rails', 'active record', 'postgresSQL', 'bcrypt', 'cypress'];
+const jungleRailsStack = ['ruby', 'rails', 'active record', 'postgresSQL', 'bcrypt', 'cypress', 'rspec'];
 
 const educationalPostingBoardDescription = 'board';
 const educationalPostingBoardStack = ['javascript', 'jQuery', 'express', 'nodeJS', 'bcrypt', 'bootstrap', 'sass', 'ejs', 'postgresSQL'];

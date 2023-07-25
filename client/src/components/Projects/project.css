@@ -137,6 +137,10 @@
   background-color: #D30001;
 }
 
+.rspec {
+  background-color: rgb(241, 126, 126);
+}
+
 .active-record {
   background-color: pink;
 }
