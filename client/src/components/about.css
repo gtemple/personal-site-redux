@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  font-size: 30px;
+  font-size: 25px;
   padding: 30px;
 }
 
@@ -18,8 +18,8 @@
 }
 
 .portrait{
-  width: 400px;
-  border-radius: 120px;
+  width: 30vw;
+  border-radius: 100px;
 }
 
 @keyframes shake {
@@ -37,5 +37,18 @@
 
   40%, 60% {
     transform: translate3d(3px, 0, 0);
+  }
+}
+
+@media (max-width: 600px) {
+  .about{
+    flex-direction: column;
+  }
+  .portrait {
+    min-width: 80vw;
+  }
+  .socials{
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
