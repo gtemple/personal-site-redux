@@ -5,3 +5,9 @@
   height: 100vh;
   margin: auto;
 }
+
+@media (max-width: 600px) {
+  .btn-scroll {
+    font-size: 14px;
+  }
+}

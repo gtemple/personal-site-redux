@@ -195,3 +195,15 @@ button:hover::before {
   }
 }
 
+
+@media (max-width: 600px) {
+  #root {
+    padding: 0;
+  }
+  h1{
+    font-size: 60px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+}
