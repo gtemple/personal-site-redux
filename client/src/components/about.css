@@ -8,6 +8,7 @@
   justify-content: space-around;
   font-size: 25px;
   padding: 30px;
+
 }
 
 .socials-icon:hover {
@@ -43,12 +44,13 @@
 @media (max-width: 600px) {
   .about{
     flex-direction: column;
+    align-items: center;
   }
   .portrait {
     min-width: 80vw;
   }
   .socials{
     flex-direction: row;
-    justify-content: space-around;
+    gap: 30px;
   }
 }

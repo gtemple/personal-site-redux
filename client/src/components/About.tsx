@@ -5,6 +5,9 @@ import './about.css'
 export const About = () => {
   return (
     <div className='about'>
+      <h6>
+        I am a <span className='emphasize'>full stack developer</span> who likes to develop full time. please hire me.
+      </h6>
       <img className='portrait' src={portrait} />
       <div className='socials'>
         <div className='socials-icon'><a href='https://www.linkedin.com/in/giordano-temple/' target="_blank"><SiLinkedin /></a></div>

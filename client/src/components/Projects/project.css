@@ -10,7 +10,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-startgit;
-  width: 100vw
+  width: 100vw;
 }
 
 .techs-container {
@@ -50,7 +50,6 @@
   max-height: 90vh;
 }
 
-
 .box:hover {
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
@@ -58,6 +57,14 @@
 .title {
   font-weight: 800;
   font-size: 30px;
+  padding: 0 0 5px 0;
+}
+
+.urls {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 30px 0 30px;
+  font-weight: 600;
 }
 
 .stack {

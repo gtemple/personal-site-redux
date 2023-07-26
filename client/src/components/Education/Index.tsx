@@ -23,7 +23,7 @@ const schools: School[] = [
     location: 'Toronto, ON',
     start: 'January 2023',
     end: 'March 2023',
-    description: 'It program therefore it do',
+    description: 'It program therefore it do. It program therefore it do.It program therefore it do.It program therefore it do.It program therefore it do.It program therefore it do.It program therefore it do.It program therefore it do.It program therefore it do.It program therefore it do.It program therefore it do.It program therefore it do.It program therefore it do.It program therefore it do.',
     image: 'image link will go here',
     skills: ['web dev'],
   },

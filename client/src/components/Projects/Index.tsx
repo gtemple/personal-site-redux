@@ -91,7 +91,7 @@ const Projects: React.FC = () => {
   return (
     <div className='project-container'>
       <div className='techs-container'>
-        <h3>Filter my projects</h3> 
+        <h3>Filter my projects</h3>
         <div className='techs'>
           {uniqueStacks.map((stack, index) => (
             <div
@@ -105,18 +105,21 @@ const Projects: React.FC = () => {
         </div>
       </div>
       <div className='projects'>
-        {filteredProjects.length !== 0 ? filteredProjects.map((project, index) => (
-          <Project
-            key={index}
-            name={project.name}
-            image={project.image}
-            description={project.description}
-            url={project.url}
-            github={project.github}
-            stack={project.stack}
-          />
-        )) :
-        (<h3>I don't have any projects that include  all of the selected technologies!</h3>)}
+        {filteredProjects.length !== 0 ? (
+          filteredProjects.map((project, index) => (
+            <Project
+              key={index}
+              name={project.name}
+              image={project.image}
+              description={project.description}
+              url={project.url}
+              github={project.github}
+              stack={project.stack}
+            />
+          ))
+        ) : (
+          <h3>I don't have any projects that include all of the selected technologies!</h3>
+        )}
       </div>
     </div>
   );

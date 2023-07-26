@@ -23,8 +23,25 @@ h4 {
   margin: 0;
 }
 
+h6 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.emphasize {
+  font-weight: 900;
+  color: #2b72a5;
+}
+
 .vw5 {
   font-size: 5vw;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(87, 87, 87);
 }
 
 
