@@ -60,10 +60,10 @@ export const Project = ({ name, description, url, github, stack, image }: Projec
         <a href={github}>Github</a>
         {url !== undefined ? <a href={url}>Visit</a> : null}
       </div>
-      <div>
-      {description}
-        <div className='stack'>{stackParser(stack)}</div>
-      </div>
+        <div>
+          <p>{description}</p>
+          <div className='stack'>{stackParser(stack)}</div>
+        </div>
     </div>
   );
 };

@@ -13,7 +13,7 @@ interface ProjectData {
   end: string;
 }
 
-const cgrDescription = 'racing';
+const cgrDescription = 'The CGR Racing League site is a passion project that you can visit to stay up to date on the current standings as well go through the statistical history of the league.';
 const cgrStack = ['typescript', 'react', 'bootstrap', 'supabase', 'sql', 'cors'];
 
 const sureChefDescription = 'cooking';
