@@ -61,7 +61,7 @@ export const Project = ({ name, description, url, github, stack, image }: Projec
         {url !== undefined ? <a href={url}>Visit</a> : null}
       </div>
         <div>
-          <p>{description}</p>
+          <p className='description'>{description}</p>
           <div className='stack'>{stackParser(stack)}</div>
         </div>
     </div>

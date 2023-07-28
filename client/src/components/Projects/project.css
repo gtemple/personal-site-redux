@@ -8,8 +8,8 @@
 .projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-startgit;
+  justify-content: space-around;
+  align-items: flex-start;
   width: 100vw;
 }
 
@@ -27,7 +27,7 @@
   width: 80%;
   max-width: 400px;
   min-width: 300px;
-  margin: 15px;
+  margin: 5px;
   padding: 10px;
   border-radius: 3px;
   background-color: #e9e95d;
@@ -63,8 +63,18 @@
 .urls {
   display: flex;
   justify-content: space-between;
-  padding: 5px 30px 0 30px;
+  padding: 5px 80px 0 80px;
   font-weight: 600;
+  font-size: 20px;
+}
+
+.description {
+  margin: 10px 30px 10px 30px;
+  background-color: #74bef3;
+  letter-spacing: 0.4px;
+  padding: 8px;
+  border-radius: 4px;
+  font-weight: 400;
 }
 
 .stack {
@@ -194,4 +204,16 @@
 
 .cors {
   background-color: #72ff91;
+}
+
+@media (max-width: 940px) {
+  .box {
+    width: 90vw;
+    max-width: 900px;
+  }
+
+  .project-image {
+    max-width: 850px;
+    height: 200px;
+  }
 }
