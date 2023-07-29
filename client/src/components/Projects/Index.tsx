@@ -22,7 +22,7 @@ const sureChefStack = ['javascript', 'react', 'openAI', 'axios', 'nodeJS', 'expr
 const jungleRailsDescription = 'Whether you\'re looking to add some green to your home or your garden, Jungle will satisfy your needs. Jungle is an online storefront specializing in the sale of plants and includes POS capabilites.'
 const jungleRailsStack = ['ruby', 'rails', 'active record', 'postgresSQL', 'bcrypt', 'cypress', 'rspec'];
 
-const educationalPostingBoardDescription = 'board';
+const educationalPostingBoardDescription = 'Resource Wall is a single-page app that allows users to save external resources in a central place that is publicly available to any user. Posts include a title, description, image and link. Users have the ability to like, comment, and rate other posts.';
 const educationalPostingBoardStack = ['javascript', 'jQuery', 'express', 'nodeJS', 'bcrypt', 'bootstrap', 'sass', 'ejs', 'postgresSQL'];
 
 const allProjects: ProjectData[] = [
@@ -90,6 +90,7 @@ const Projects: React.FC = () => {
 
   return (
     <div className='project-container'>
+      <h1>PROJECTS</h1>
       <div className='techs-container'>
         <h3>Filter my projects</h3>
         <div className='techs'>

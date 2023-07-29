@@ -25,9 +25,8 @@
 
 .box {
   width: 35vw;
-  min-width: 420px;
-  min-height: 500px;
-  margin: 5px;
+  min-height: 480px;
+  margin: 10px 0;
   padding: 10px;
   border-radius: 8px;
   border-style: solid;
@@ -39,7 +38,7 @@
   max-width: 550px;
   min-width: 300px;
   height: 180px;
-  border-radius: 3px;
+  border-radius: 6px;
   object-fit: cover;
   object-position: 0 0%;
 }
@@ -56,8 +55,9 @@
 
 .title {
   font-weight: 800;
-  font-size: 30px;
+  font-size: 2rem;
   padding: 0 0 5px 0;
+  text-transform: uppercase;
 }
 
 .urls {
@@ -70,11 +70,11 @@
 }
 
 .description {
-  margin: 10px 30px 10px 30px;
+  margin: 10px 4px;
   background-color: #74bef3;
   font-size: 17px;
-  letter-spacing: 0.5px;
-  padding: 15px;
+  letter-spacing: 0.7px;
+  padding: 13px;
   border-radius: 4px;
   font-weight: 400;
 }
@@ -211,11 +211,18 @@
   background-color: #72ff91;
 }
 
+
+@media (max-width: 1100px) {
+  .box {
+    min-height: 590px;
+  }
+}
+
 @media (max-width: 980px) {
   .box {
-    width: 90vw;
+    width: 85vw;
     max-width: 900px;
-    min-height: 20px;
+    min-height: 80px;
   }
 
   .project-image {
