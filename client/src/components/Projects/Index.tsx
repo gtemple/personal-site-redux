@@ -19,7 +19,7 @@ const cgrStack = ['typescript', 'react', 'bootstrap', 'supabase', 'sql', 'cors']
 const sureChefDescription = 'cooking';
 const sureChefStack = ['javascript', 'react', 'openAI', 'axios', 'nodeJS', 'express', 'sql', 'postgresSQL', 'userfront', 'bootstrap', 'cors', 'destr'];
 
-const jungleRailsDescription = 'Whether you\'re looking to add some green to your home or your garden, Jungle will satisfy your needs. Jungle is an online storefront utilizing Ruby on Rails specializing in the sale of plants.';
+const jungleRailsDescription = 'Whether you\'re looking to add some green to your home or your garden, Jungle will satisfy your needs. Jungle is an online storefront specializing in the sale of plants and includes POS capabilites.'
 const jungleRailsStack = ['ruby', 'rails', 'active record', 'postgresSQL', 'bcrypt', 'cypress', 'rspec'];
 
 const educationalPostingBoardDescription = 'board';

@@ -26,11 +26,12 @@
 .box {
   width: 35vw;
   min-width: 420px;
+  min-height: 500px;
   margin: 5px;
   padding: 10px;
-  border-radius: 3px;
-  background-color: #e9e95d;
-  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 5px;
 }
 
 .project-image {
@@ -214,6 +215,7 @@
   .box {
     width: 90vw;
     max-width: 900px;
+    min-height: 20px;
   }
 
   .project-image {
