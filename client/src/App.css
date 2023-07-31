@@ -12,6 +12,13 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  color: #2b72a5;
+  font-size: calc(50px + 3vw);
+  font-weight: 900;
+  margin: 0;
+}
+
 h3 {
   font-weight: 600;
   font-size: 25px;
@@ -78,6 +85,13 @@ button:hover::before {
   transform-origin: left;
 }
 
+.start {
+  text-align: start;
+}
+
+.end {
+  text-align: end;
+}
 
 .fade-in {
   opacity: 0;
@@ -222,5 +236,11 @@ button:hover::before {
   }
   h4 {
     font-size: 20px;
+  }
+  .start {
+    text-align: center;
+  }
+  .end {
+    text-align: center;
   }
 }

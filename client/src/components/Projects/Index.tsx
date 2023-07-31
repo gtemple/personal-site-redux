@@ -90,7 +90,7 @@ const Projects: React.FC = () => {
 
   return (
     <div className='project-container'>
-      <h1>PROJECTS</h1>
+      <h2 className='start'>PROJECTS</h2>
       <div className='techs-container'>
         <h3>Filter my projects</h3>
         <div className='techs'>

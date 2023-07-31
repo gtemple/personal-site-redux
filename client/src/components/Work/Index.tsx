@@ -24,7 +24,8 @@ const jobs = [
 const Work = () => {
   return (
     <div>
-            {jobs.map((job, index) => (
+      <h2 className='end'>WORK</h2>
+      {jobs.map((job, index) => (
         <Job
           key={index}
           company={job.company}

@@ -9,8 +9,8 @@ type JobProps = {
 
 const Job = ({company, position, startDate, endDate, description, responsibilities}: JobProps) => {
   return (
-    <div className='job'>
-      <div>{company}</div>
+    <div className='job-container'>
+      <div><span className='background-line'>{company}</span></div>
       <div>{position}</div>
       <div>{startDate} - {endDate}</div>
       <div>{description}</div>

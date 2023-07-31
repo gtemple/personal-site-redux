@@ -55,7 +55,7 @@ const schools: School[] = [
 const Education = () => {
   return (
     <div>
-      <h3>EDUCATION</h3>
+      <h2 className='start'>EDUCATION</h2>
       {schools.map((school, index) => (
         <Degree
           key={index}
