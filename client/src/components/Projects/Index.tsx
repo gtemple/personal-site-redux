@@ -16,7 +16,9 @@ interface ProjectData {
 const cgrDescription = 'The CGR Racing League site is a passion project that you can visit to stay up to date on the current standings as well go through the statistical history of the league.';
 const cgrStack = ['typescript', 'react', 'bootstrap', 'supabase', 'sql', 'cors'];
 
-const sureChefDescription = 'cooking';
+const sureChefDescription = `While we may not have robot assistants in every kitchen yet, SureChef is the next best thing. Our AI-powered platform allows you to keep track of your kitchen inventory and generates recipe ideas for you based on the ingredients you have on hand.`;
+
+With SureChef, you'll never have to worry about wasting food or struggling to come up with meal ideas again. Our platform makes cooking easy and convenient, helping you save time and money in the kitchen.
 const sureChefStack = ['javascript', 'react', 'openAI', 'axios', 'nodeJS', 'express', 'sql', 'postgresSQL', 'userfront', 'bootstrap', 'cors', 'destr'];
 
 const jungleRailsDescription = 'Whether you\'re looking to add some green to your home or your garden, Jungle will satisfy your needs. Jungle is an online storefront specializing in the sale of plants and includes POS capabilites.'
