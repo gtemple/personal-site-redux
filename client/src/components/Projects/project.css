@@ -19,7 +19,8 @@
 }
 
 .filter-button {
-  margin: 5px 0;
+  width: 200px;
+  margin: 8px auto;
   padding: 5px;
   font-size: 16px;
   background-color: #74bef3;
@@ -44,7 +45,7 @@
 
 .box {
   width: 45%;
-  min-height: 480px;
+  min-height: 550px;
   margin: 10px 0;
   padding: 10px;
   border-radius: 8px;

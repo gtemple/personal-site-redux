@@ -13,7 +13,7 @@ interface ProjectData {
   end: string;
 }
 
-const cgrDescription = 'The CGR Racing League site is a passion project that you can visit to stay up to date on the current standings as well go through the statistical history of the league.';
+const cgrDescription = 'The CGR Racing League site is a passion project that you can visit to stay up to date on the current standings as well go through the statistical history of the online F1 racing league. It includes over 2000 table rows of data entry.';
 const cgrStack = ['typescript', 'react', 'bootstrap', 'supabase', 'sql', 'cors'];
 
 const sureChefDescription = `This AI-powered platform allows you to keep track of your kitchen inventory and generates recipe ideas for you based on the ingredients you have on hand. With SureChef, you'll never have to worry about wasting food or struggling to come up with meal ideas again.`;
@@ -98,9 +98,9 @@ const Projects: React.FC = () => {
       <h2 className='start'>PROJECTS</h2>
       <div className='techs-container'>
         <h3>Filter my projects</h3>
-        <button className='filter-button' onClick={toggleTechsSection}>
+        <div className='filter-button' onClick={toggleTechsSection}>
           {techsSectionOpen ? 'hide filter options' : 'show filter options'}
-        </button>
+        </div>
         {techsSectionOpen && (
           <div className='techs'>
             {uniqueStacks.map((stack, index) => (
