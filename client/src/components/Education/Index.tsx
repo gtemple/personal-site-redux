@@ -25,7 +25,7 @@ const schools: School[] = [
     end: 'March 2023',
     description: 'It program therefore it do. It program therefore it do.It program therefore it do.It program therefore it do.It program therefore it do.It program therefore it do.It program therefore it do.It program therefore it do.It program therefore it do.It program therefore it do.It program therefore it do.It program therefore it do.It program therefore it do.It program therefore it do.',
     image: 'image link will go here',
-    skills: ['web dev'],
+    skills: ['web dev', 'front end', 'backend', 'databases', 'frameworks', 'testing', 'peer programming'],
   },
   {
     name: 'George Brown College',

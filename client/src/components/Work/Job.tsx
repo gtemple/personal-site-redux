@@ -14,7 +14,7 @@ const Job = ({company, position, startDate, endDate, description, responsibiliti
       <div>{position}</div>
       <div>{startDate} - {endDate}</div>
       <div>{description}</div>
-      <div>{responsibilities.map((responsibility:string) => <div className='start'>• {responsibility}</div>)}</div>
+      <div className='responsibilities'>{responsibilities.map((responsibility:string) => <div className='responsibility'>• {responsibility}</div>)}</div>
     </div>
   )
 }

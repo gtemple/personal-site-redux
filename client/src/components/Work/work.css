@@ -16,3 +16,18 @@
   font-weight: 700;
   text-transform: uppercase;
 }
+
+@media (min-width: 1px) {
+  .responsibilities {
+    padding: 10px 15px;
+    margin: 3px;
+    font-size: 14px;
+    text-align: left;
+    border-radius: 8px;
+    background-color: rgba(152, 255, 241, 0.536);
+  }
+
+  .responsibility {
+    padding: 2px 0;
+  }
+}

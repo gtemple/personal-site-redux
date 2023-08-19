@@ -32,7 +32,6 @@ const Degree = ({name, degree, location, start, end, description, skills}: Degre
       </div>
       <div>
         <div className='skills'>Skills {skillsParser(skills)}</div>
-        <div className='degree-description'>{description}</div>
       </div>
     </div>
   )
