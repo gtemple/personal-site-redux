@@ -51,6 +51,7 @@
   }
   .portrait {
     min-width: 80vw;
+    height: auto;
   }
   .socials{
     flex-direction: row;

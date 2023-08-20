@@ -97,7 +97,7 @@ const Projects: React.FC = () => {
     <div className='project-container'>
       <h2 className='start'>PROJECTS</h2>
       <div className='techs-container'>
-        <h3>Filter my projects</h3>
+        <div className='filter-desc'>filter my projects</div>
         <div className='filter-button' onClick={toggleTechsSection}>
           {techsSectionOpen ? 'hide filter options' : 'show filter options'}
         </div>
