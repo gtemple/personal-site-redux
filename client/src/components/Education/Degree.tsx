@@ -26,10 +26,8 @@ const Degree = ({name, degree, degreeType, location, start, end}: DegreeData) =>
         <div>
           <div className="degree-type">{degree} // <br></br>{degreeType}</div>
           <div>{start} - {end}</div>
+          <div>{location}</div>
         </div>
-      </div>
-      <div>
-        <div>{location}</div>
       </div>
     </div>
   )
