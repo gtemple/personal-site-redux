@@ -5,7 +5,7 @@ import './education.css'
 interface School {
   name: string;
   degree: string;
-  degreeType?: string;
+  degreeType: string;
   minor?: string;
   location: string;
   start: string;
@@ -56,11 +56,13 @@ const Education = () => {
   return (
     <div>
       <h2 className='start'>EDUCATION</h2>
+      <div className='education-container'>
       {schools.map((school, index) => (
         <Degree
           key={index}
           name={school.name}
           degree={school.degree}
+          degreeType={school.degreeType}
           minor={school.minor}
           location={school.location}
           start={school.start}
@@ -70,6 +72,7 @@ const Education = () => {
           skills={school.skills}
         />
       ))}
+    </div>
     </div>
   );
 };

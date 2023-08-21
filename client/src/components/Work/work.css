@@ -18,7 +18,7 @@
 }
 
 .job-secondary {
-  margin: 8px 0;
+  margin: 8px 4px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -30,6 +30,7 @@
 
 .job-description {
   text-align: left;
+  font-weight: 500;
 }
 
 @media (min-width: 1px) {
