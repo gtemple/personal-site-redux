@@ -10,7 +10,7 @@ type DegreeData = {
   skills: string[]
 }
 
-const Degree = ({name, degree, location, start, end, description, skills}: DegreeData) => {
+const Degree = ({name, degree, location, start, end, skills}: DegreeData) => {
 
   const skillsParser = (skillArray: string[]) => {
     return skillArray.map((s: string, index: number) => {
