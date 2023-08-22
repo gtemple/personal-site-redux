@@ -52,27 +52,35 @@ const schools: School[] = [
   },
 ];
 
+
 const Education = () => {
   return (
     <div>
       <h2 className='start'>EDUCATION</h2>
-      <div className='education-container'>
-      {schools.map((school, index) => (
-        <Degree
-          key={index}
-          name={school.name}
-          degree={school.degree}
-          degreeType={school.degreeType}
-          minor={school.minor}
-          location={school.location}
-          start={school.start}
-          end={school.end}
-          description={school.description}
-          image={school.image}
-          skills={school.skills}
-        />
-      ))}
-    </div>
+        <div className='education-container'>
+        {schools.map((school, index) => (
+          <Degree
+            key={index}
+            name={school.name}
+            degree={school.degree}
+            degreeType={school.degreeType}
+            minor={school.minor}
+            location={school.location}
+            start={school.start}
+            end={school.end}
+            description={school.description}
+            image={school.image}
+            skills={school.skills}
+          />
+        ))}
+      </div>
+      <div>
+        <div className='other'>
+            <div className='other-list'><span className='other-title'>Certificates</span> smart serve</div>
+            <div className='other-list'><span className='other-title'>Languages</span> english, french</div>
+            <div className='other-list'><span className='other-title'> Other Proficiencies</span> davinci resolve</div>
+        </div>
+      </div>
     </div>
   );
 };

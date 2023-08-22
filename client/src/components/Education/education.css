@@ -22,23 +22,20 @@
   color: #4b7695;
 }
 
-.skills {
+.other {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: space-around;
 }
 
-.skill {
-  margin: 4px;
-  padding: 2px;
-  font-weight: 400;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 3px;
-  transition: transform .2s;
-
+.other-title {
+  margin-right: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 25px;
 }
 
-.skill:hover {
-  transform: scale(1.1);
+.other-list {
+  margin: 4px 15px;
+  font-size: 21px;
 }

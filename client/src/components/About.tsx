@@ -2,7 +2,6 @@ import portrait from '../assets/images/me.jpg'
 import { SiInstagram, SiLinkedin, SiGithub, SiGmail, SiLetterboxd } from "react-icons/si";
 import './about.css'
 
-const skills = ['english', 'french', 'davinci resolve', 'smart serve'];
 
 export const About = () => {
   return (
@@ -33,15 +32,6 @@ export const About = () => {
       </div>
       <div>
         <img className='portrait' src={portrait} />
-        <div>non-tech skills</div>
-        <div className='skills'>
-          {skills.map((skill: string, index: number) => (
-            <span className='skill' key={index}>
-              {skill}
-            </span>
-          ))}
-  </div>
-
       </div>
     </div>
   )
