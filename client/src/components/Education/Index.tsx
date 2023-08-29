@@ -52,7 +52,7 @@ const schools: School[] = [
   },
 ];
 
-
+//reminder to fix later
 const Education = () => {
   return (
     <div>
