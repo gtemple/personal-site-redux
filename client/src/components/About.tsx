@@ -8,19 +8,24 @@ export const About = () => {
     <div className='about'>
       <div>
         <h6>
-          Like many others, the 2020 pandemic brought my work to a halt. With extra time on my hands,
-          I decided to elevate one of my favorite hobbies, <span className='emphasize'>web development</span>, into something more meaningful.
-          I dedicated my days to immersing myself in <span className='emphasize'>The Odin Project's</span> modules, mastering <span className='emphasize'>Ruby on Rails</span> and <span className='emphasize'>data structures</span>.
-          But, it wasn't enough.
+          <span className='emphasize'>Giordano Temple</span> is a programmer with an exciting portfolio 
+          of web development projects, created using his fluency in <span className='emphasize'>Typescript</span> and <span className='emphasize'>React</span>, 
+          and is currently working to further his Java expertise to expand the scope of what he can design.
         </h6>
         <h6>
-          In 2021, as life began to regain some normalcy, I seized the opportunity to enroll in the <span className='emphasize'>Lighthouse Labs Full-Stack Web Development bootcamp</span>.
-          This experience not only allowed me to meet like-minded peers but also provided valuable insights from seasoned industry professionals.
-          Although I excel in <span className='emphasize'>Typescript</span> and <span className='emphasize'>React</span>, I am committed to continuous growth and am currently expanding my expertise in Java.
+          Having spent much of 2020 immersed in <span className='emphasize'>The Odin Project's</span> modules, 
+          where programming first gave him a new outlet for his passion for problem solving, he went on to master 
+          <span className='emphasize'>Ruby on Rails</span> and <span className='emphasize'>data structures</span>. 
+          Ever since, coding has become a focus in his life and career.
         </h6>
         <h6>
-          Beyond my professional pursuits, I keep up with my passion for <span className='emphasize'>sports</span>, <span className='emphasize'>video games</span>,
-          and <span className='emphasize'>travel</span> through various web projects that I actively work on during my free time.
+          Most recently, this commitment led to his enrollment in — and completion of — the 
+          <span className='emphasize'>Lighthouse Labs Full-Stack Web Development bootcamp</span>, where he not only 
+          learned valuable insights from industry professionals, but honed his technical abilities, too.
+        </h6>
+        <h6>
+          Based in Toronto, Giordano is open to all programming opportunities as he continues to refine his skill set
+           and merge his passion for sports, video games, and travel into various web projects.
         </h6>
       </div>
       <div className='socials'>
