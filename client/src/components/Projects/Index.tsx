@@ -12,6 +12,8 @@ interface ProjectData {
   start: string;
   end: string;
 }
+const tntEmployeeDescription = 'A full employee management system that allows users to create and edit tours as well as everything they encapsulate including sites, restaurants and hotels.'
+const tntEmployeeStack = ['nextJS', 'typescript', 'MUI', 'supabase', 'react', 'sql', 'supabase-auth']
 
 const cgrDescription = 'The CGR Racing League site is a passion project that you can visit to stay up to date on the current standings as well go through the statistical history of the online F1 racing league. It includes over 2000 table rows of data entry.';
 const cgrStack = ['typescript', 'react', 'bootstrap', 'supabase', 'sql', 'cors'];
@@ -27,6 +29,16 @@ const educationalPostingBoardStack = ['javascript', 'jQuery', 'express', 'nodeJS
 
 const allProjects: ProjectData[] = [
   {
+    name: 'TNT Tours Employee Site',
+    description: tntEmployeeDescription,
+    url: 'https://employee-site-qqdm0rdqz-gtemple.vercel.app/',
+    image: 'tntEmployee.png',
+    github: 'https://github.com/gtemple/employee-site-tnt',
+    stack: tntEmployeeStack,
+    start: 'October 2023',
+    end: 'present'
+  },
+  {
     name: 'CGR League',
     description: cgrDescription,
     url: 'https://cgr-league.net/',
@@ -34,7 +46,7 @@ const allProjects: ProjectData[] = [
     github: 'https://github.com/gtemple/cgr-league',
     stack: cgrStack,
     start: 'April 2023',
-    end: 'present'
+    end: 'July 2023'
   },
   {
     name: 'SureChef',

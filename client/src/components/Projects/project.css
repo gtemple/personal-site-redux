@@ -154,6 +154,10 @@
   background-color: #3ECF8E;
 }
 
+.supabase-auth {
+  background-color: #157a4d;
+}
+
 .sql {
   background-color: rgb(255, 136, 0);
 }
@@ -232,6 +236,16 @@
 .destr {
   color: white;
   background-color: #406852;
+}
+
+.MUI {
+  color: white;
+  background-color: #0e1568;
+}
+
+.nextJS {
+  color: white;
+  background-color: #121212;
 }
 
 .cors {
