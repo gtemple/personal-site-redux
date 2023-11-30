@@ -15,12 +15,12 @@ export const About = () => {
         <h6>
           Having spent much of 2020 immersed in <span className='emphasize'>The Odin Project's</span> modules, 
           where programming first gave him a new outlet for his passion for problem solving, he went on to gain profficiency in
-          <span className='emphasize'>Ruby on Rails</span> and is currently focused on mastering <span className='emphasize'>data structures</span>. 
+          <span className='emphasize'> Ruby on Rails</span> and is currently focused on mastering <span className='emphasize'>data structures</span>. 
           Ever since, coding has become a focus in his life and career.
         </h6>
         <h6>
           Most recently, this commitment led to his enrollment in — and completion of — the  
-          <span className='emphasize'>Lighthouse Labs Full-Stack Web Development bootcamp</span>, where he not only 
+          <span className='emphasize'> Lighthouse Labs Full-Stack Web Development bootcamp</span>, where he not only 
           learned valuable insights from industry professionals, but honed his technical abilities, too.
         </h6>
         <h6>
