@@ -10,16 +10,16 @@ export const About = () => {
         <h6>
           <span className='emphasize'>Giordano Temple</span> is a programmer with an exciting portfolio 
           of web development projects, created using his fluency in <span className='emphasize'>Typescript</span> and <span className='emphasize'>React</span>, 
-          and is currently working to further his Java expertise to expand the scope of what he can design.
+          and is currently working to learn Java and expand the scope of what he can design.
         </h6>
         <h6>
           Having spent much of 2020 immersed in <span className='emphasize'>The Odin Project's</span> modules, 
-          where programming first gave him a new outlet for his passion for problem solving, he went on to master 
-          <span className='emphasize'>Ruby on Rails</span> and <span className='emphasize'>data structures</span>. 
+          where programming first gave him a new outlet for his passion for problem solving, he went on to gain profficiency in
+          <span className='emphasize'>Ruby on Rails</span> and is currently focused on mastering <span className='emphasize'>data structures</span>. 
           Ever since, coding has become a focus in his life and career.
         </h6>
         <h6>
-          Most recently, this commitment led to his enrollment in — and completion of — the 
+          Most recently, this commitment led to his enrollment in — and completion of — the  
           <span className='emphasize'>Lighthouse Labs Full-Stack Web Development bootcamp</span>, where he not only 
           learned valuable insights from industry professionals, but honed his technical abilities, too.
         </h6>
